@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str = "Python is an object-oriented programming language with unmatched versatility"
-str = str[13:46] + str[55:61] + str[0:6]
+str = "Python is an interpreted, interactive, object-oriented programming\
+ language that combines remarkable power with very clear syntax"
+str = str[39:67] + str[107:112] + str[:6]
 print(str)
-
