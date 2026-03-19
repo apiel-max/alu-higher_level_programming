@@ -1,48 +1,41 @@
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
+>>> MyList = __import__('1-my_list').MyList
 
->>> bg.integer_validator("age", 1)
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[1, 2, 4]
 
->>> bg.integer_validator("age", 0)
-Traceback (most recent call last):
-ValueError: age must be greater than 0
+>>> my_list2 = MyList()
+>>> my_list2.print_sorted()
+[]
 
->>> bg.integer_validator("age", -4)
-Traceback (most recent call last):
-ValueError: age must be greater than 0
+>>> my_list3 = MyList()
+>>> my_list3.append(5)
+>>> my_list3.append(-3)
+>>> my_list3.append(1)
+>>> my_list3.print_sorted()
+[-3, 1, 5]
 
->>> bg.integer_validator("age", "4")
-Traceback (most recent call last):
-TypeError: age must be an integer
+>>> my_list4 = MyList()
+>>> my_list4.append(1)
+>>> my_list4.append(4)
+>>> my_list4.append(2)
+>>> my_list4.print_sorted()
+[1, 2, 4]
+>>> print(my_list4)
+[1, 4, 2]
 
->>> bg.integer_validator("age", (4,))
-Traceback (most recent call last):
-TypeError: age must be an integer
+>>> my_list5 = MyList([3, 1, 2])
+>>> print(my_list5)
+[3, 1, 2]
 
->>> bg.integer_validator("age", [3])
-Traceback (most recent call last):
-TypeError: age must be an integer
-
->>> bg.integer_validator("age", True)
-Traceback (most recent call last):
-TypeError: age must be an integer
-
->>> bg.integer_validator("age", {3, 4})
-Traceback (most recent call last):
-TypeError: age must be an integer
-
->>> bg.integer_validator("age", None)
-Traceback (most recent call last):
-TypeError: age must be an integer
-
->>> bg.area()
-Traceback (most recent call last):
-Exception: area() is not implemented
-
->>> bg.integer_validator("age")
-Traceback (most recent call last):
-TypeError: integer_validator() missing 1 required positional argument: 'value'
-
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> my_list6 = MyList()
+>>> my_list6.append(3)
+>>> my_list6.append(1)
+>>> my_list6.append(2)
+>>> sorted_list = my_list6.print_sorted()
+[1, 2, 3]
+>>> print(my_list6)
+[3, 1, 2]
