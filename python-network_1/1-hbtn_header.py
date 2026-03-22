@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Script that takes a URL and displays the value of X-Request-Id in header"""
+"""Sends a request to a URL and displays X-Request-Id header value."""
 import urllib.request
 import sys
 
-with urllib.request.urlopen(sys.argv[1]) as response:
-    print(response.getheader('X-Request-Id'))
+with urllib.request.urlopen(sys.argv[1]) as r:
+    print(r.getheader('X-Request-Id'))

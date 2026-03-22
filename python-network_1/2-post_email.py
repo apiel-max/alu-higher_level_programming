@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Script that sends a POST request with email parameter and displays response"""
+"""Sends a POST request with email parameter and displays the response."""
 import urllib.request
 import urllib.parse
 import sys
 
 data = urllib.parse.urlencode({'email': sys.argv[2]}).encode('utf-8')
-with urllib.request.urlopen(sys.argv[1], data) as response:
-    print(response.read().decode('utf-8'))
+with urllib.request.urlopen(sys.argv[1], data) as r:
+    print(r.read().decode('utf-8'))

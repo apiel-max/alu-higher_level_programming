@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Script that sends a POST request with a letter and displays the result"""
+"""Sends a POST request with a letter and displays the search result."""
 import requests
 import sys
 
 q = sys.argv[1] if len(sys.argv) > 1 else ""
-response = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
 try:
-    data = response.json()
+    data = r.json()
     if data:
         print("[{}] {}".format(data.get('id'), data.get('name')))
     else:
