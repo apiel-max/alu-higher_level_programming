@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Sends a request to a URL and displays X-Request-Id header value."""
+"""This module sends a GET request to a URL and prints the X-Request-Id value."""
 import requests
 import sys
 

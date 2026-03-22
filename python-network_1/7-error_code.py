@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Sends a request and displays error code if HTTP status >= 400."""
+"""This module sends a request and prints error code if HTTP status >= 400."""
 import requests
 import sys
 
