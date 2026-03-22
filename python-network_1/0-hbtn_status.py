@@ -2,8 +2,8 @@
 """Script that fetches https://alu-intranet.hbtn.io/status using urllib"""
 import urllib.request
 
-with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
-    body = response.read()
+with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as r:
+    body = r.read()
     print("Body response:")
     print("\t- type: {}".format(type(body)))
     print("\t- content: {}".format(body))
