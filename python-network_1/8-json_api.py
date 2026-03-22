@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module sends a POST request with a letter and displays search result."""
+"""This module sends a POST request with a letter and shows search result."""
 import requests
 import sys
 
