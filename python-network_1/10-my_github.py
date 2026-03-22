@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module uses GitHub API to display user id using Basic Authentication."""
+"""This module uses GitHub API to display user id via Basic Authentication."""
 import requests
 import sys
 
