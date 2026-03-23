@@ -1,4 +1,3 @@
-"""
 Test cases for say_my_name function
 
 >>> say_my_name = __import__('3-say_my_name').say_my_name
@@ -29,4 +28,3 @@ last_name must be a string
 ... except TypeError as e:
 ...     print(e)
 first_name must be a string
-"""
