@@ -40,3 +40,15 @@ a must be an integer
 ... except TypeError as e:
 ...     print(e)
 a must be an integer
+
+>>> try:
+...     add_integer(float('inf'), 2)
+... except TypeError as e:
+...     print(e)
+a must be an integer
+
+>>> try:
+...     add_integer(float('nan'), 2)
+... except TypeError as e:
+...     print(e)
+a must be an integer
