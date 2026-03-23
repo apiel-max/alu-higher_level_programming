@@ -190,7 +190,7 @@ class TestRectangle(unittest.TestCase):
             **{'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4})
         self.assertEqual(r.y, 4)
 
-    def test_save_to_file_none(self):
+    def test_save_to_file_None(self):
         """Tests save_to_file with None."""
         Rectangle.save_to_file(None)
         with open("Rectangle.json", "r") as f:
