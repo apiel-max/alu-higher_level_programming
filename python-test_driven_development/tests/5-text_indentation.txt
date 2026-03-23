@@ -1,4 +1,3 @@
-"""
 Test cases for text_indentation function
 
 >>> text_indentation = __import__('5-text_indentation').text_indentation
@@ -28,4 +27,3 @@ text must be a string
 
 >>> text_indentation("No special chars")
 No special chars
-"""
